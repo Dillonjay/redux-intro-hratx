@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-/* */
+import PropTypes from 'prop-types';
+/* We need connect to hook up (subcribe) our component to the redux store */
 import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
-
+/* Import our actions creators so we can dispatch actions to the store */
 import {
   updateInputValue,
   updateName,
@@ -11,6 +12,14 @@ import {
 } from './actions';
 
 class App extends Component {
+  /* Added prop-types to document/type check the props comming in from our store. */
+  static propTypes = {
+    name: PropTypes.string,
+    inputValue: PropTypes.string,
+    onUpdateInputValue: PropTypes.func.isRequired,
+    onUpdateName: PropTypes.func.isRequired,
+    onReset: PropTypes.func.isRequired,
+  }
   render() {
     return (
       <div className="App">
@@ -40,13 +49,17 @@ class App extends Component {
   }
 }
 
+/* Grab the state that we want and pass it in as props to our component. */
 const mapStateToProps = (state) => {
   return {
     inputValue: state.inputValue,
     name: state.name,
   }
 }
-
+/*
+  Grab the stores dispatch function and pass it in as props.
+  Also, create some functions that will dispatch our actions to the store for us. Pass them in as props.
+*/
 const mapDispatchToProps = (dispatch) => {
   return {
     dispatch,
@@ -56,4 +69,5 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
+/* More on the connect function see here: https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options */
 export default connect(mapStateToProps, mapDispatchToProps)(App);
