@@ -26,7 +26,7 @@ Here is the simple Redux/React app! I added some comments to the code as well as
 #### Community maintined notes on the course.
 * https://github.com/tayiorbeii/egghead.io_redux_course_notes
 
-## redux DevTools
+## Redux DevTools
 ### Repo
 * https://github.com/zalmoxisus/redux-devtools-extension
 ### Get the DevTools chrome extension
