@@ -40,5 +40,5 @@ Here is the simple Redux/React app! I added some comments to the code as well as
 * https://spectrum.chat/?t=257957e0-ef20-4757-b25e-82156b89131a
 ### Very dope Medium blog by the creators of React Router.
 * https://cdb.reacttraining.com/
-### I suscribe to Kent C Dodds news letter. He consistently sends solid material.
+### I subscribe to Kent C Dodds news letter. He consistently sends solid material.
 * https://kentcdodds.com/
