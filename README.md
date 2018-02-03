@@ -1,6 +1,6 @@
 # Redux intro HR ATX
 
-Super simple Redux/React app! I added some comments to the code as well as few external resources. It was super nice meeting you all, good luck on your future endevors!
+Here is the simple Redux/React app! I added some comments to the code as well as few external resources. It was super nice meeting you all, good luck on your future endevors!
 
 ## Getting Started
 
